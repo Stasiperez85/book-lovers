@@ -8,7 +8,7 @@ type Query {
 }
 type User {
   _id: ID!
-  username: String
+  username: String!
   email: String
   bookCount: Int
   savedBooks: [Book]
@@ -28,7 +28,7 @@ type Auth {
 input BookInput {
   bookId: ID!
   authors: [String]
-  description: String
+  description: String!
   title: String
   image: String
   link: String
